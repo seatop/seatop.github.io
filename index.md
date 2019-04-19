@@ -1,2 +1,2 @@
-{include test.html}
-{% name %}
+{{include test.html}}
+{ name }
