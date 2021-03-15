@@ -1,0 +1,16 @@
+* { padding: 0;margin: 0; }
+body { background: #1f685d url(bg.jpg) no-repeat; background-size: 100% 100%; background-attachment: fixed;text-align: center;}
+
+.page-image { background: #1f685d url(phone.jpg) no-repeat; background-size: 100% 100%; width: 90%; margin: 5% 5% 0 5%; height: 150px; border-radius: 15px 15px 0 0; }
+.page-content {background: #fff;width: 90%; margin: 0 auto 5% auto; border-radius: 0 0 15px 15px;}
+.page-content p {padding-bottom: 30px;font-size: 20px; color: #c8c;}
+.page-content a {font-size: 18px; text-decoration: none;padding: 20px;display: block;color: #c5c;}
+
+@media only screen and (min-width: 980px){
+	.page-image { background: #1f685d url(pc.jpg) no-repeat; background-size: 100% 100%; width: 980px; margin: 100px auto 0 auto; height: 250px; }
+	.page-content {width: 980px;}
+	.page-content a {padding: 30px;}
+	.page-content p {padding-bottom: 50px; }
+
+
+}
