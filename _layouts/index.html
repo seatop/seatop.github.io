@@ -7,7 +7,7 @@ var draw = function(){
 	graph.width = graph.width;	
 	var g = graph.getContext("2d");
         var fx = 125;
-        var fy = 100;
+        var fy = 10;
 	g.lineWidth = 8;
 	g.lineCap = "round";
 	g.strokeStyle = "#ccc";
@@ -55,11 +55,11 @@ var draw = function(){
 	g.fillStyle = "#ccc";	
 	g.font = "15px sans-serif";
 	g.textAlign = "left";
-	g.fillText("比亚迪唐DM-i(2021)车主",300,180);
+	g.fillText("比亚迪唐DM-i(2021)车主",300,90+fy);
 	g.fillStyle = "#ddd";
 	g.font = "16px sans-serif";
-	g.fillText("E-mail : hi@public.email.cn",125,340);
-	g.fillText("TEL : (086)166 0513 6357",125,300);
+	g.fillText("E-mail : hi@public.email.cn",125,250+fy);
+	g.fillText("TEL : (086)166 0513 6357",125,210+fy);
 }
 draw();
 </script>
