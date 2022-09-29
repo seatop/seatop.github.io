@@ -3,10 +3,10 @@ function draw(tel){
 	graph.width = graph.width;
 	var g = graph.getContext("2d");
     var fx = 125;
-    var fy = 10;
+    var fy = 60;
 	g.lineWidth = 8;
 	g.lineCap = "round";
-	g.strokeStyle = "#ccc";
+	g.strokeStyle = "#e2ced0";
 	g.beginPath();
 	g.arc(10+fx,10+fy,10,Math.PI/2,Math.PI*3/2,false);
 	g.moveTo(10+fx,fy);
@@ -48,25 +48,32 @@ function draw(tel){
 	g.lineTo(240+fx,40+fy);
 	g.stroke();
 
-	g.fillStyle = "#ccc";	
+	g.fillStyle = "#e2ced0";
 	g.font = "15px sans-serif";
-	g.textAlign = "left";
-	g.fillText("比亚迪唐DM-i(2021)车主",300,90+fy);
-	g.fillText("数学、网络开发、平面设计等爱好者",230,120+fy);
-	g.fillStyle = "#ddd";
-	g.font = "16px sans-serif";
-	g.fillText("TEL : (086)"+tel,125,220+fy);
-	g.fillText("E-mail : hi@public.email.cn",125,250+fy);	
+	g.textAlign = "right";
+	g.fillText("比亚迪唐DM-i(2021)车主",470,80+fy);
+	g.fillText("数学、网络开发爱好者",470,110+fy);
+	g.fillText("TEL : (086)"+tel,470,180+fy);
+	g.fillText("E-mail : hi@public.email.cn",470,210+fy);	
 }
+
+function nt(){
+	var x = 38 + 28,
+	    y = 234 + 279,
+	    z = 166 + 191;
+
+	return ' 1' + x + ' 0' + y + ' 6' + z;
+}
+
 function shuoshuo(sha){
 	var graph = document.getElementById("graph");
 	graph.width = graph.width;
 	var g = graph.getContext("2d");
     var fx = 125;
-    var fy = 10;
+    var fy = 60;
 	g.lineWidth = 8;
 	g.lineCap = "round";
-	g.strokeStyle = "#ccc";
+	g.strokeStyle = "#e2ced0";
 	g.beginPath();
 	g.arc(10+fx,10+fy,10,Math.PI/2,Math.PI*3/2,false);
 	g.moveTo(10+fx,fy);
@@ -108,18 +115,16 @@ function shuoshuo(sha){
 	g.lineTo(240+fx,40+fy);
 	g.stroke();
 
-	g.fillStyle = "#ccc";	
-	g.font = "20px sans-serif";
-	g.textAlign = "left";
-	g.fillText("seatop.me",370,90+fy);
-	g.fillStyle = "#ddd";
-	g.font = "16px sans-serif";
-	g.fillText(sha,120,180+fy);	
+	g.fillStyle = "#e2ced0";	
+	g.font = "15px sans-serif";
+	g.textAlign = "right";
+	g.fillText("seatop.me",470,80+fy);
+	g.fillText(sha,470,190+fy);	
 }
-draw(" --- ---- ---- ");
+draw(" 000 0000 0000");
 var gc = document.getElementById("graph");
 gc.ondblclick = function(){
-	draw(" 166" + " 0513" + " 6357 ");
+	draw(nt());
 }
 var i = 0;
 gc.onclick = function(){
@@ -129,6 +134,6 @@ gc.onclick = function(){
 		shuoshuo(one[j]);		
 	}else{
 		i = 0;
-		draw(" --- ---- ---- ");		
+		draw(" 000 0000 0000");		
 	}
 }
