@@ -1,9 +1,15 @@
+var gr = document.createElement("canvas");
+gr.id = "graph";
+gr.width = 600;
+gr.height = 400;
+document.body.appendChild(gr);
+
 function draw(tel){
 	var graph = document.getElementById("graph");
 	graph.width = graph.width;
 	var g = graph.getContext("2d");
     var fx = 125;
-    var fy = 60;
+    var fy = 160;
 	g.lineWidth = 8;
 	g.lineCap = "round";
 	g.strokeStyle = "#e2ced0";
@@ -51,10 +57,10 @@ function draw(tel){
 	g.fillStyle = "#e2ced0";
 	g.font = "15px sans-serif";
 	g.textAlign = "right";
-	g.fillText("比亚迪唐DM-i(2021)车主",470,80+fy);
-	g.fillText("数学、网络开发爱好者",470,110+fy);
-	g.fillText("TEL : (086)"+tel,470,180+fy);
-	g.fillText("E-mail : hi@public.email.cn",470,210+fy);	
+	g.fillText("比亚迪唐DM-i(2021)车主",465,fy-60);
+	g.fillText("数学、网络开发爱好者",465,fy-30);
+	g.fillText("TEL : (086)"+tel,465,120+fy);
+	g.fillText("E-mail : hi@public.email.cn",465,150+fy);	
 }
 
 function nt(){
@@ -70,7 +76,7 @@ function shuoshuo(sha){
 	graph.width = graph.width;
 	var g = graph.getContext("2d");
     var fx = 125;
-    var fy = 60;
+    var fy = 160;
 	g.lineWidth = 8;
 	g.lineCap = "round";
 	g.strokeStyle = "#e2ced0";
@@ -117,15 +123,18 @@ function shuoshuo(sha){
 
 	g.fillStyle = "#e2ced0";	
 	g.font = "15px sans-serif";
-	g.textAlign = "right";
-	g.fillText("seatop.me",470,80+fy);
-	g.fillText(sha,470,190+fy);	
+	g.textAlign = "left";
+	g.fillText("seatop.me",fx,fy-30);
+	g.fillText(sha,fx,100+fy);	
 }
+
 draw(" 000 0000 0000");
+
 var gc = document.getElementById("graph");
 gc.ondblclick = function(){
 	draw(nt());
 }
+
 var i = 0;
 gc.onclick = function(){
 	if(i == 0){
