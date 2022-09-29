@@ -53,7 +53,6 @@ function draw(tel){
 	g.textAlign = "left";
 	g.fillText("比亚迪唐DM-i(2021)车主",300,90+fy);
 	g.fillText("数学、网络开发、平面设计等爱好者",230,120+fy);
-	g.fillText("如需即时联系，试试双击",305,150+fy);
 	g.fillStyle = "#ddd";
 	g.font = "16px sans-serif";
 	g.fillText("TEL : (086)"+tel,125,220+fy);
@@ -117,18 +116,19 @@ function shuoshuo(sha){
 	g.font = "16px sans-serif";
 	g.fillText(sha,120,180+fy);	
 }
-draw("123 4567 8900");
+draw(" --- ---- ---- ");
 var gc = document.getElementById("graph");
 gc.ondblclick = function(){
-	draw("166 0513 6357");
+	draw(" 166" + " 0513" + " 6357 ");
 }
 var i = 0;
 gc.onclick = function(){
 	if(i == 0){
 		i = 1;
-		shuoshuo("热爱生活，珍惜当下！");		
+		var j = Math.floor(Math.random()*one.length);
+		shuoshuo(one[j]);		
 	}else{
 		i = 0;
-		draw("123 4567 8900");		
+		draw(" --- ---- ---- ");		
 	}
 }
