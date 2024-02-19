@@ -57,18 +57,16 @@ function draw(tel){
 	g.fillStyle = "#e2ced0";
 	g.font = "15px sans-serif";
 	g.textAlign = "right";
-	g.fillText("比亚迪唐DM-i(2021)车主",465,fy-60);
-	g.fillText("数学、网络开发爱好者",465,fy-30);
 	g.fillText("TEL : (086)"+tel,465,120+fy);
 	g.fillText("E-mail : hi@public.email.cn",465,150+fy);	
 }
 
 function nt(){
-	var x = 38 + 28,
-	    y = 234 + 279,
-	    z = 166 + 191;
+	var x = 18 + 21,
+	    y = 111 + 160,
+	    z = 166 + 77;
 
-	return ' 1' + x + ' 0' + y + ' 6' + z;
+	return ' 1' + x + ' 6' + y + ' 8' + z;
 }
 
 function shuoshuo(sha){
@@ -124,7 +122,6 @@ function shuoshuo(sha){
 	g.fillStyle = "#e2ced0";	
 	g.font = "15px sans-serif";
 	g.textAlign = "left";
-	g.fillText("seatop.me",fx,fy-30);
 	g.fillText(sha,fx,100+fy);	
 }
 
