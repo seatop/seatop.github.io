@@ -3,16 +3,12 @@ layout: page
 title: 友情链接
 ---
 
-[Github Pages] [https://pages.github.com/](https://pages.github.com/)
++++++
 
-[Jekyll] [https://jekyllrb.com/](https://jekyllrb.com/)
+{% for url in site.data.link %}
+<p>[{{ url.text }}] <a href="{{url.link}}">{{ url.link }}</a></p>
+{% endfor %}
 
-[Liquid] [https://shopify.github.io/liquid/](https://shopify.github.io/liquid/)
++++++
 
-[Github] [https://www.github.com/seatop/](https://www.github.com/seatop/)
-
-[工作博客] [https://www.seatop.com.cn/](https://www.seatop.com.cn) 
-
----
-
-可以添加链接，将链接发送至 {{ site.email }}
+可以交换链接，将链接发送至 {{ site.email }}

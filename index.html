@@ -3,7 +3,7 @@ layout: index
 title: 首页
 ---
 <div class="posts">
-{% for post in site.posts | limit:10 %}
+{% for post in site.posts  limit: site.index_num %}
 <div class="post">
   <div class="author">
     <div class="avatar"><img src="./avatar/slogo220613.png"></div>
