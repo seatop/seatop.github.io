@@ -1,0 +1,17 @@
+* {margin: 0; padding: 0;}
+body {background-color: #444e68;font-size: 0.8em;text-align: center;}
+.all {width: 90%;background-color: #444e68;margin: 0 auto;}
+.tip {text-align: left;font-size: 1.2em;color: #f5ebdc;padding-left: 6.6em;}
+.posts {margin:1em; width: 80%; background-color: #444e68; text-align: left;}
+.avatar,.avatar img {width:5em; height: 5em;}
+.avatar img{border-radius: 50%;}
+.avatar {float: left;}
+.info {float: left;width: 30em;}
+.info li {list-style-type: none;margin-left: 3.6em;margin-top: 0.2em;font-size: 0.6em;color: #f5ebdc;}
+.info li:first-child {font-size: 1.5em;margin-top: 0em;margin-left: 1.4em;}
+.author::after {clear: both;content:"";display: block;}
+.content {margin-left: 6em;margin-bottom: 2em;margin-top: 0.6em;line-height: 1.8em;font-size: 1.2em;border-radius: 5px;background-color: #dff4fc;padding: 10px;color: #3b6c99;}
+.logo a {color: #dfe3f0;text-decoration-line: none;}
+.logo {text-align: left;padding-left: 5em;margin-top: 2.4em;margin-bottom: 1.8em;font-size: 1.6em;color: #dfe3f0;}
+.footer {text-align: left;padding-left: 8em;margin-top: 4.4em;margin-bottom: 1.8em;font-size: 1em;color: #dfe3f0;}
+.footer li {list-style-type: none; float: left;padding-right: 1em;}
