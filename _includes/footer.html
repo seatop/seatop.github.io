@@ -1,6 +1,9 @@
 	<div class="footer">
 		<ul>
-			<li><a href="https://seatop.me/">THEME BY SEATOP</a></li>
+			{% for nav in site.data.nav %}
+			<li><a href="{{site.url}}/{{nav.url}}">{{nav.name}}</a></li>
+			{% endfor %}
+			<li><a href="https://seatop.me/theme">Theme</a></li>
 		</ul>
 	</div>
 </div>
