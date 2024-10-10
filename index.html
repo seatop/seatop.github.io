@@ -6,12 +6,12 @@ title: 首页
 {% for post in site.posts  limit: site.index_num %}
 <div class="post">
   <div class="author">
-    <div class="avatar"><img src="./avatar/slogo220613.png"></div>
+    <div class="avatar"><img src="{{ site.url }}/avatar/slogo220613.png"></div>
     <div class="info">
       <ul>
-        <li>seatop</li>
-        <li>https://seatop.me/，z@seatop.me</li>
-        <li>{{ post.title }}，{{ post.date | date: "%Y-%m-%d" }}</li>
+        <li>{{ site.author }}</li>
+        <li>{{ site.url }}，{{ site.email }}</li>
+        <li><a href="{{ post.url }}">{{ post.title }}</a>，{{ post.date | date: "%Y-%m-%d" }}</li>
       </ul>
     </div>
   </div>

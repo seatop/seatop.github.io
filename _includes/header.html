@@ -5,15 +5,15 @@
 <meta charset='UTF-8'>
 <meta name='viewport' content='width=device-width initial-scale=1'>
 </head>
-<link rel="stylesheet" type="text/css" href="./style/main.css">
+<link rel="stylesheet" type="text/css" href="{{ site.url }}/style/main.css">
 <body>
 <div class="all">
-	<div class="logo"><a href="./">https://seatop.me/</a>{{ page.title }}</div>
+	<div class="logo"><a href="{{ site.url }}/">{{ site.url }}</a>/{{ page.title }}</div>
 	<div class="nav">
 		<ul>
-			<li><a href="./">首页</a></li>
-			<li><a href="./about">关于</a></li>			
-			<li><a href="./link">链接</a></li>
-			<li><a href="./more">更多</a></li>
+			<li><a href="{{ site.url }}/">首页</a></li>
+			<li><a href="{{ site.url }}/about">关于</a></li>			
+			<li><a href="{{ site.url }}/link">链接</a></li>
+			<li><a href="{{ site.url }}/more">更多</a></li>
 		</ul>
 	</div>
