@@ -10,7 +10,7 @@ body {background-color: #444e68;font-size: 0.8em;text-align: center;}
 .avatar img{border-radius: 50%;}
 .avatar {float: left;}
 .info {float: left;}
-.info li {list-style-type: none;margin-left: 3.6em;margin-top: 0.4em;font-size: 0.6em;color: #f5ebdc;}
+.info li {list-style-type: none;margin-left: 2.4em;margin-top: 0.4em;font-size: 0.9em;color: #f5ebdc;}
 .info a {text-decoration-line: none; color: #f5ebdc;}
 .info li:first-child {font-size: 1.5em;margin-top: 0em;margin-left: 1.4em;}
 .author::after {clear: both;content:"";display: block;}

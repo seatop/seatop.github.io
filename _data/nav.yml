@@ -1,8 +1,8 @@
-- name: Home
-  url: index
-
 - name: About
   url: about
 
 - name: Link
   url: link
+
+- name: Theme
+  url: README.md
