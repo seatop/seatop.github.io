@@ -3,7 +3,7 @@ layout: page
 title: Jekyll Theme
 ---
 
-MiBl(microblog) for Jekyll theme
+[MiBl(microblog) for Jekyll theme](https://github.com/seatop/seatop.github.io)
 
 主要参数在_config.yml文件中修改
 
