@@ -8,8 +8,9 @@ layout: default
 	    <div class="info">
 	      <ul>
 	        <li><a href="{{site.url}}">{{site.author}}</a></li>
-	        <li>{{ site.url }}，{{ site.email }}</li>
-	        <li>{{ page.title }}，{{ page.date | date: "%Y-%m-%d" }}</li>
+	        <li>{{ site.url }}</li>
+                <li>{{ site.email }}</li>
+	        <li>♦&nbsp;{{ page.title }}，{{ page.date | date: "%Y-%m-%d" }}</li>
 	      </ul>
 	    </div>
 	  </div>
@@ -17,10 +18,10 @@ layout: default
 	  {{ content }}
 	  </div>
 	  {% if page.previous %}
-	  <p class="pn">← <a href="{{ page.previous.url }}">{{ page.previous.title }}</a></p>
+	  <p class="pn">♦&nbsp;<a href="{{ page.previous.url }}">{{ page.previous.title }}，{{ page.previous.date | date: "%Y-%m-%d" }}</a></p>
 	  {% endif%}
 	  {% if page.next %}
-	  <p class="pn">→ <a href="{{ page.next.url }}">{{ page.next.title }}</a></p>
+	  <p class="pn">♦&nbsp;<a href="{{ page.next.url }}">{{ page.next.title }}，{{ page.next.date | date: "%Y-%m-%d" }}</a></p>
 	  {% endif%}
 	</div>
 </div>
