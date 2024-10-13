@@ -9,12 +9,13 @@ layout: default
 	      <ul>
 	        <li><a href="{{site.url}}">{{site.author}}</a></li>
 	        <li>{{ site.url }}</li>
-                <li>{{ site.email }}</li>
-	        <li>{{ page.title }}，{{ page.date | date: "%Y-%m-%d" }}</li>
+                <li>{{ site.email }}</li>	        
 	      </ul>
 	    </div>
 	  </div>
 	  <div class="content">
+    <p class="ctitle"><a href="{{ page.url }}">{{ page.title }}</a></p>
+    <p class="ctime"><a href="{{ page.url }}">{{ page.date | date: "%Y/%m/%d" }}</a></p>
 	  {{ content }}
 	  </div>
 	  {% if page.previous %}
