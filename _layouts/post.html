@@ -14,8 +14,8 @@ layout: default
 	    </div>
 	  </div>
 	  <div class="content">
-    <p class="ctitle"><a href="{{ page.url }}">{{ page.title }}</a></p>
-    <p class="ctime"><a href="{{ page.url }}">{{ page.date | date: "%Y/%m/%d" }}</a></p>
+    <p class="ctitle">{{ page.title }}</p>
+    <p class="ctime">{{ page.date | date: "%Y/%m/%d" }}</p>
 	  {{ content }}
 	  </div>
 	  {% if page.previous %}
