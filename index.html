@@ -5,16 +5,7 @@ title: 微言
 <div class="posts">
 {% for post in site.posts  limit: site.index_num %}
 <div class="post">
-  <div class="author">
-    <div class="avatar"><img src="{{ site.url }}/avatar/{{ site.avatar }}"></div>
-    <div class="info">
-      <ul>
-        <li><a href="{{site.url}}">{{site.author}}</a></li>
-        <li>{{ site.url }}</li>
-        <li>{{ site.email }}</li>
-      </ul>
-    </div>
-  </div>
+  {% include author.html %}
   <div class="content">
     <p class="ctitle"><a href="{{ post.url }}">{{ post.title }}</a></p>
     <p class="ctime"><a href="{{ post.url }}">{{ post.date | date: "%Y/%m/%d" }}</a></p>

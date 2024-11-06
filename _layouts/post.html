@@ -3,16 +3,7 @@ layout: default
 ---
 <div class="posts">
 	<div class="post">
-	  <div class="author">
-	    <div class="avatar"><img src="{{ site.url }}/avatar/{{ site.avatar }}"></div>
-	    <div class="info">
-	      <ul>
-	        <li><a href="{{site.url}}">{{site.author}}</a></li>
-	        <li>{{ site.url }}</li>
-                <li>{{ site.email }}</li>	        
-	      </ul>
-	    </div>
-	  </div>
+	  {% include author.html %}
 	  <div class="content">
     <p class="ctitle">{{ page.title }}</p>
     <p class="ctime">{{ page.date | date: "%Y/%m/%d" }}</p>
