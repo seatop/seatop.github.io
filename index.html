@@ -1,9 +1,10 @@
 ---
 layout: default
-title: 微言
+title: 轻言 
 ---
+
 <div class="posts">
-{% for post in site.posts  limit: site.index_num %}
+{% for post in site.posts  limit: 1 %}
 <div class="post">
   {% include author.html %}
   <div class="content">
